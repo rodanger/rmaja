@@ -1,0 +1,204 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="uisual" content="Made with Uisual (uisual.com)">
+    <meta name="author" content="#">
+    <meta name="description" content="#">
+    <meta name="referrer" content="unsafe-url">
+    <meta name="robots" content="index, follow">
+    <!-- SPEED -->
+    <link rel="preconnect" href="https://res.cloudinary.com">
+    <link rel="dns-prefetch" href="https://res.cloudinary.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!---->
+       
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> 
+
+    <!-- LINK -->
+    <link rel="me" href="#">
+    <link rel="canonical" href="#">
+    <link rel="icon" type="image/png" href="#" sizes="48x48">
+    <!-- PERFORMANCE -->
+    
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+    
+    <!-- TITLE -->
+    <title>Robert Mj</title>
+
+    <style>
+
+
+      .navbar-dark {
+        background: rgb(62, 61, 61);
+      }
+
+
+    </style>
+
+  </head>
+  <body>
+
+       <!--Navbar-->
+
+      
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <img src="{% static 'img/rlogo.png' %}" width="75px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+          <a class="nav-link active"  href="{% url 'about' %}">About</a>
+          <a class="nav-link active" href="{% url 'gallery' %}">Projects</a>
+          <a class="nav-link active" href="{% url 'contact' %}" tabindex="-1" aria-disabled="true">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--End-->
+
+      <main role="main">
+        <section class="ui-section-hero">
+          <div class="ui-layout-container">
+            <div class="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
+              <!-- COPYWRITING -->
+              <div>
+               
+                <p class="ui-text-intro">Robert Maja was born in Santo Domingo, Dominican Republic in September 1971 . His talent as an artist was quickly recognized in elementary school and strongly encouraged by teachers and elders. Learning fast from a group of older university art students, young Robert was eventually invited to paint on large projects such as the famous mural at UAS (University of Santo Domingo) where he worked with artist Silvano Lora (1931-2003).</p>
+                <!-- CTA -->
+                <div class="ui-component-cta ui-layout-flex">
+                  <a href="{% url 'contact' %}" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary">Contact Me</a>
+                  
+                </div>
+              </div>
+              <!-- IMAGE -->
+              <img src="{% static 'img/2.jpg' %}" loading="lazy" alt="#" class="ui-image-half-right">
+            </div>
+          </div>
+        </section>
+        
+        
+        <section class="ui-section-feature">
+          <div class="ui-layout-container">
+            <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
+              <!-- IMAGE -->
+              <img src="{% static 'img/IMG_1754.jpg' %}" alt="#" class="ui-image-half-left">
+              <!-- FEATURE -->
+              <div>
+                <h2>History</h2>
+                <p class="ui-text-intro">In 1987, at age 16, Robert entered Bellas Artes of Santo Domingo to formalize his art education with a variety of courses including interior decorating, specialty techniques and mural painting. His predominant style of depicting natural Caribbean scenes in vibrant exhilarating color emerged during this time. After graduating.</p>
+                <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
+                  <li class="ui-component-list--item ui-component-list--item-check">Plastic artist</li>
+                  <li class="ui-component-list--item ui-component-list--item-check">Muralist</li>
+                  <li class="ui-component-list--item ui-component-list--item-check">Landscape painter</li>
+                  <li class="ui-component-list--item ui-component-list--item-check">Artist</li>
+                </ul>
+              </div>
+            </div>
+            <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
+              <!-- FEATURE -->
+              <div>
+                <h2>View</h2>
+                <p class="ui-text-intro">Robert Maja’s Caribbean passion and soul flow through every brushstroke to produce canvasses and murals of bold intensity balanced by gentle emotion. The daily rhythms of island life are conveyed through his vibrant colors resting in a tropical balance between warmth and coolness, high tide and low and the sun and the moon.</p>
+                <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
+                  <li class="ui-component-list--item ui-component-list--item-check">Represent</li>
+                  <li class="ui-component-list--item ui-component-list--item-check">Find the inner</li>
+                  <li class="ui-component-list--item ui-component-list--item-check">Outer beauty</li>
+                  <li class="ui-component-list--item ui-component-list--item-check">Reflect</li>
+                </ul>
+              </div>
+              <!-- IMAGE -->
+              <img src="{% static 'img/1.jpg' %}" alt="#" class="ui-image-half-right">
+            </div>
+          </div>
+        </section>
+       
+        <section class="ui-section-testimonial">
+          <div class="ui-layout-container">
+            <div class="ui-section-testimonial__layout ui-layout-grid ui-layout-grid-2">
+              <div class="ui-layout-column-4">
+                <img src="https://media.istockphoto.com/vectors/ro/arte-flat-design-scoala-de-rechizite-icon-cu-side-shadow-id930353718?b=1&k=20&m=930353718&s=170667a&w=0&h=S89lNjnBiyBcJ0yLmM_bSPIKJXcVC80gR5NIvZjkEN8=" alt="#" class="ui-section-testimonial--avatar">
+                <p class="ui-section-testimonial--quote ui-text-intro">&ldquo;Art has a nice habit of spoiling all artistic theories.&rdquo;</p>
+                <p class="ui-section-testimonial--author"><strong>Marcel Duchamp</strong><br><small class="ui-text-note">Artist</small></p>
+              </div>
+              <div class="ui-layout-column-4">
+                <img src="https://cdn2.iconfinder.com/data/icons/design-butterscotch-vol-1/256/Fine_Art-512.png" alt="#" class="ui-section-testimonial--avatar">
+                <p class="ui-section-testimonial--quote ui-text-intro">&ldquo;Nothing is more harmful to creativity than the fury of inspiration.&rdquo;</p>
+                <p class="ui-section-testimonial--author"><strong>Umberto Eco</strong><br><small class="ui-text-note">philosopher</small></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="ui-section-close">
+          <div class="ui-layout-container">
+            <div class="ui-layout-column-6 ui-layout-column-center">
+              <h2>Ready to start?</h2>
+              <br>
+              <!-- CTA -->
+              <div class="ui-component-cta ui-layout-flex">
+                <a href="{% url 'gallery' %}" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary">Show Gallery</a>
+                
+              </div>
+              <br><br><br><br>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer role="contentinfo" class="ui-section-footer">
+        <div class="ui-layout-container">
+          <div class="ui-section-footer__layout ui-layout-flex">
+            <!-- COPYRIGHT -->
+            <p class="ui-section-footer--copyright ui-text-note">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Robert Maja</p> 
+            <!-- MENU -->          
+            <nav role="navigation" class="ui-section-footer--nav ui-section-footer--menu ui-layout-flex">
+              <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Features</small></a>
+              <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Projects</small></a>
+              <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Contact</small></a>
+            </nav>
+            <!-- SOCIAL -->
+            <nav role="navigation" class="ui-section-footer--nav ui-section-footer--social ui-layout-flex">
+              <a href="#" role="link" aria-label="#">
+                <svg viewBox="0 0 24 24" height="16" width="16" fill="none" stroke="#AEAEAE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img" aria-label="#">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                </svg>
+              </a>
+              <a href="#" role="link" aria-label="#">
+                <svg viewBox="0 0 24 24" height="16" width="16" fill="none" stroke="#AEAEAE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img" aria-label="#">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/>
+                </svg>
+              </a>
+              <a href="#" role="link" aria-label="#">
+                <svg viewBox="0 0 24 24" height="16" width="16" fill="none" stroke="#AEAEAE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img" aria-label="#">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
+                </svg>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </footer>
+  
+      <!--Javascript-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+      <!---->
+  </body>
+</html>

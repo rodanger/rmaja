@@ -1,0 +1,148 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    
+   
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="uisual" content="Made with Uisual (uisual.com)">
+    <meta name="author" content="#">
+    <meta name="description" content="#">
+    <meta name="referrer" content="unsafe-url">
+    <meta name="robots" content="index, follow">
+    <!-- SPEED -->
+    <link rel="preconnect" href="https://res.cloudinary.com">
+    <link rel="dns-prefetch" href="https://res.cloudinary.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="{% static 'css/galia.css'%}">
+     <!-- PERFORMANCE -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+     <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> 
+
+    <style>
+
+
+      .navbar-dark {
+        background: rgb(62, 61, 61);
+      }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+  <!--Navbar-->
+  <!--Navbar-->
+
+      
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <img src="{% static 'img/rlogo.png' %}" width="75px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+          <a class="nav-link active"  href="{% url 'about' %}">About</a>
+          <a class="nav-link active" href="{% url 'gallery' %}">Projects</a>
+          <a class="nav-link active" href="{% url 'contact' %}" tabindex="-1" aria-disabled="true">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--End-->
+
+
+  <div class="wrapper">
+    <!-- filter Items -->
+    <nav>
+      <div class="items">
+        <span class="item active" data-name="all">All</span>
+        <span class="item" data-name="cubism">Cubism</span>
+        <span class="item" data-name="roosters">Roosters</span>
+        <span class="item" data-name="nat">Nature</span>
+        <span class="item" data-name="cigars">Cigars</span>
+        <span class="item" data-name="murals">Murals</span>
+      </div>
+    </nav>
+    <!-- filter Images -->
+
+    <div class="gallery">
+      <div class="image" data-name="cigars"><span><img src="{% static 'img/RM5-Pura-Vita-40-x-30.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="cubism"><span><img src="{% static 'img/IMG_5598.jpg' %}" alt="" height="365px" ></span></div>
+      <div class="image" data-name="nat"><span><img src="{% static 'img/IMG_0235.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="nat"><span><img src="{% static 'img/IMG_7466_1.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="roosters"><span><img src="{% static 'img/IMG_7443_1.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="nat"><span><img src="{% static 'img/MajaPaintings-430.png' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="cigars"><span><img src="{% static 'img/SAM_2989.JPG' %} " alt="" height="365px"></span></div>
+      <div class="image" data-name="cubism"><span><img src="{% static 'img/IMG_7464_1.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="cubism"><span><img src="{% static 'img/IMG_7473_1.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="cigars"><span><img src="{% static 'img/Puro-Elegancia.JPG' %}" alt="" height="365px" ></span></div>
+      <div class="image" data-name="nat"><span><img src="{% static 'img/RM1-Dominican-Landscape-30-x-40-1.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="murals"><span><img src="{% static 'img/IMG_2044.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="cubism"><span><img src="{% static 'img/IMG_5343.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="murals"><span><img src="{% static 'img/IMG_2110.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="roosters"><span><img src="{% static 'img/IMG_5596.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="cigars"><span><img src="{% static 'img/IMG_7440_1.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="cubism"><span><img src="{% static 'img/IMG_7470_1.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="cigars"><span><img src="{% static 'img/RM4-Puros-Anos-48-x-36.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="roosters"><span><img src="{% static 'img/IMG_5591.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="nat"><span><img src="{% static 'img/IMG_0899.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="cigars"><span><img src="{% static 'img/IMG_7447_1.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="murals"><span><img src="{% static 'img/IMG_2109.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="nat"><span><img src="{% static 'img/Bird-of-Paradise2.JPG' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="murals"><span><img src="{% static 'img/IMG_5602.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="murals"><span><img src="{% static 'img/IMG_2108.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="nat"><span><img src="{% static 'img/DR-Market.JPG' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="roosters"><span><img src="{% static 'img/IMG_5586.jpg' %}" alt="" height="365px"></span></div>
+      <div class="image" data-name="cigars"><span><img src="{% static 'img/IMG_5335.jpg' %}" alt="" height="365px"></span></div>
+    </div>
+  </div>
+
+   <!-- fullscreen img preview box -->
+   <div class="preview-box">
+    <div class="details">
+      <span class="title">Image Category: <p></p></span>
+      <span class="icon fas fa-times"></span>
+    </div>
+    <div class="image-box"><img src="" alt=""></div>
+  </div>
+  <div class="shadow"></div>
+
+
+
+  <script src="{% static 'js/main.js' %}"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
+
