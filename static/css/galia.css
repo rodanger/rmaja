@@ -9,6 +9,7 @@
   line-height: var(--ui-typography-p-leading);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  
 }
 ::selection{
   color: #fff;
@@ -16,6 +17,7 @@
 }
 body{
   padding: 0px;
+  
 }
 .wrapper{
   margin: 100px auto;
@@ -36,9 +38,9 @@ body{
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  color: rgb(62, 61, 61);
+  color: rgb(31, 30, 30);
   border-radius: 50px;
-  border: 2px solid rgb(62, 61, 61);
+  border: 2px solid rgb(224, 155, 51);
   transition: all 0.3s ease;
 }
 .items span.active,
